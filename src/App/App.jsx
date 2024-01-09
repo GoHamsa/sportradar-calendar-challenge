@@ -92,7 +92,7 @@ export const App = () => {
       </div>
 
       {clicked && !eventForDate(clicked) && (
-        <ViewEventModal
+        <NewEventModal
           onClose={() => setClicked(null)}
           onSave={(title, goals) => {
             setEvents([...events, { title, date: clicked, goals }]);
